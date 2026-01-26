@@ -18,7 +18,11 @@ class Movie {
   }
 }
 
-void main() {
+void main() async{
+  
+  print(await waitAndGetSomething());
+  waitAndGetSomething().then((name) => print(name));
+
   // Movie avatar = Movie("Avatar 3", 2025, Genre.SF);
   // print(avatar);
 
@@ -33,4 +37,13 @@ void main() {
   
   Movie seigneur = Movie.fromJson(lotr);
   print(seigneur);
+
+
+
+
+}
+
+
+Future<String> waitAndGetSomething() async{
+  return 'Michel';
 }
