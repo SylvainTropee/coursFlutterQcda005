@@ -38,9 +38,6 @@ void main() async{
   Movie seigneur = Movie.fromJson(lotr);
   print(seigneur);
 
-
-
-
 }
 
 
