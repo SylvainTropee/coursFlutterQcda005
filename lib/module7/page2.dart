@@ -7,11 +7,11 @@ class PageTwo extends StatelessWidget {
   Widget build(BuildContext context) {
 
     //récupération des paramètres
-    int number = ModalRoute.of(context)!.settings.arguments as int;
+    //int number = ModalRoute.of(context)!.settings.arguments as int;
 
     return Scaffold(body: Center(child: Column(
       children: [
-        Text("Page 2 / $number"),
+        Text("Page 2"),
         ElevatedButton(onPressed: (){
           Navigator.pop(context);
         }, child: Text("Back !"))
